@@ -359,3 +359,125 @@ form{
     height: 30%;
     height: 40%;
 }
+/* Base styles remain the same */
+
+/* Small devices (phones, up to 600px) */
+@media (max-width: 600px) {
+    #navigation {
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem;
+    }
+    #Home h1, #Home h2 {
+        font-size: 40px;
+        line-height: 1.2;
+    }
+    #Home img {
+        width: 300px; /* Minimum width for images */
+        height: auto;
+        margin: 1rem auto;
+    }
+    #contact a {
+        font-size: 20px;
+        transform: scale(1.2);
+    }
+    footer {
+        flex-direction: column;
+        font-size: 14px;
+        height: auto;
+        padding: 1rem;
+    }
+    #skills img, #projects img {
+        width: 300px; /* Minimum width for images */
+        height: auto;
+        margin: 0 auto;
+    }
+    form input, form textarea, form button {
+        width: 90%;
+        font-size: 14px;
+        min-height: 40px; /* Ensure buttons and inputs don't shrink too much */
+    }
+}
+
+/* Medium devices (tablets, up to 768px) */
+@media (max-width: 768px) {
+    #navigation {
+        justify-content: center;
+    }
+    #Home h1, #Home h2 {
+        font-size: 50px;
+    }
+    #Home img {
+        width: 400px; /* Minimum width for images */
+        height: auto;
+        margin: 1rem auto;
+    }
+    #contact a {
+        font-size: 30px;
+        transform: scale(1.4);
+    }
+    footer {
+        font-size: 16px;
+        height: auto;
+    }
+    #skills img, #projects img {
+        width: 350px; /* Minimum width for images */
+        height: auto;
+    }
+    form input, form textarea, form button {
+        width: 80%;
+        font-size: 16px;
+        min-height: 45px;
+    }
+}
+
+/* Large devices (desktops, 1024px and up) */
+@media (min-width: 1024px) {
+    #navigation {
+        justify-content: flex-end;
+    }
+    #Home h1, #Home h2 {
+        font-size: 70px;
+    }
+    #Home img {
+        width: 500px; /* Default size for large screens */
+    }
+    #contact a {
+        font-size: 40px;
+    }
+    footer {
+        font-size: 18px;
+        height: 10%;
+    }
+    #skills img, #projects img {
+        width: 400px; /* Default size for large screens */
+        height: auto;
+    }
+    form input, form textarea, form button {
+        width: 50%;
+        min-height: 50px;
+    }
+}
+
+/* Additional adjustments for better responsiveness */
+body {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+#Home p {
+    font-size: 16px;
+    margin: 0.5rem;
+}
+
+form {
+    margin: 1rem auto;
+    padding: 1rem;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    font-size: 16px;
+    padding: 1rem;
+}
